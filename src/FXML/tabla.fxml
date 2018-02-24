@@ -10,7 +10,7 @@
 
         <Text fx:id="titulo" text="Resultados" GridPane.rowIndex="0" GridPane.halignment="RIGHT"/>
         <TableView fx:id="tblResultados" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="CENTER" />
-            <VBox spacing="5" Gri>
+            <VBox spacing="5" >
                 <Button fx:id="btnAceptar" text="Aceptar" minWidth="40"/>
                 <Button fx:id="btnCancelar" text="Cancelar" minWidth="30"/>
             </VBox>
