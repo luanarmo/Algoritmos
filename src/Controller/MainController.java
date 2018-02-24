@@ -1,4 +1,4 @@
-package main;
+package Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -42,7 +42,7 @@ public class MainController implements Initializable
         if(!cmbfuncion.getSelectionModel().isEmpty()) {
             if (funcion.equals("Bisección")) {
                 try {
-                    Parent principal = FXMLLoader.load(getClass().getResource("/Grafica/grafica.fxml"));
+                    Parent principal = FXMLLoader.load(getClass().getResource("/FXML/grafica.fxml"));
                     Scene scene = new Scene(principal);
                     main.Main.getPrimaryStage().setScene(scene);
                     System.out.println(funcion);

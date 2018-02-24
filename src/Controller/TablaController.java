@@ -1,4 +1,4 @@
-package Tabla;
+package Controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -52,7 +52,7 @@ public class TablaController implements Initializable
     }
     private void cargar(){
         try {
-            Parent principal = FXMLLoader.load(getClass().getResource("/main/main.fxml"));
+            Parent principal = FXMLLoader.load(getClass().getResource("/FXML/main.fxml"));
             Scene scene = new Scene(principal);
             main.Main.getPrimaryStage().setScene(scene);
         }catch (Exception e){

@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         this.primaryStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../FXML/main.fxml"));
         primaryStage.setTitle("");
         Scene scene = new Scene(root);
         scene.getStylesheets().add(Main.class.getResource("/resources/bootstrap3.css").toExternalForm());

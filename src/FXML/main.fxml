@@ -1,0 +1,23 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="Controller.MainController"
+          xmlns:fx="http://javafx.com/fxml" minHeight="200" minWidth="300" vgap="5" hgap="5" alignment="CENTER">
+
+    <Text fx:id="titulo" text="Elige Metodo" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="LEFT"/>
+    <Label text="Función" GridPane.rowIndex="1"/>
+    <TextField fx:id="tffuncion" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label text="Metodo" GridPane.rowIndex="3"/>
+    <ComboBox fx:id="cmbfuncion" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <HBox spacing="5" alignment="BOTTOM_LEFT" GridPane.rowIndex="4" GridPane.columnIndex="1">
+        <Button fx:id="btnAceptar" text="Aceptar"/>
+        <Button fx:id="btnCancelar" text="Cancelar"/>
+    </HBox>
+
+</GridPane>

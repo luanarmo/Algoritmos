@@ -1,4 +1,4 @@
-package Grafica;
+package Controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -61,7 +61,7 @@ public class GraficaController implements Initializable
     }
     private void cargar(){
         try {
-            Parent principal = FXMLLoader.load(getClass().getResource("/Tabla/tabla.fxml"));
+            Parent principal = FXMLLoader.load(getClass().getResource("/FXML/tabla.fxml"));
             Scene scene = new Scene(principal);
             main.Main.getPrimaryStage().setScene(scene);
         }catch (Exception e){
