@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="Grafica.GraficaController"
+          prefHeight="650.0" prefWidth="1200.0" hgap="10" vgap="10" alignment="CENTER">
+    <HBox alignment="TOP_CENTER" GridPane.rowIndex="0">
+        <Text fx:id="titulo" text="Identifica la Raiz"/>
+    </HBox>
+    <HBox  GridPane.rowIndex="1" GridPane.columnIndex="0">
+        <WebView fx:id="wbGeogebra" minWidth="100" minHeight="100"/>
+    </HBox>
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="1" spacing="5">
+        <HBox spacing="5">
+            <Label text="A" minWidth="25"/>
+            <TextField fx:id="tfA"/>
+        </HBox>
+        <HBox spacing="5">
+            <Label text="B"  minWidth="25"/>
+            <TextField fx:id="tfB"/>
+        </HBox>
+        <HBox spacing="5">
+            <Label text="error"  minWidth="25"/>
+            <TextField fx:id="tferror"/>
+        </HBox>
+        <HBox spacing="5" alignment="BOTTOM_RIGHT">
+            <Button fx:id="btnAceptar" text="Aceptar"/>
+            <Button fx:id="btnCancelar" text="Cancelar"/>
+        </HBox>
+    </VBox>
+</GridPane>
